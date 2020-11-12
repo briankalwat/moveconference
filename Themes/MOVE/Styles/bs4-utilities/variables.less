@@ -1,0 +1,22 @@
+// Variables
+//-------------------//
+
+// v3 breakpoints -  sm: 768px, md: 992px, lg: 1200px; excluded xs as xs-properties are same throughout all breakpoints
+@breakpoints:        768px, 992px, 1600px, 1800px;
+@breakpoint-abbrvs:  sm, md, lg, xl;
+
+
+@props:        margin, padding;
+@prop-abbrvs:  m, p;
+
+@spacer-default: 20px;
+@spacers:        0, 1, 2, 3, 4, 5, 6, 7, auto;
+@spacer-values:  0,                      // 0 -> 0 (@spacers -> @spacer-values)
+				   @spacer-default * 1,
+	               @spacer-default * 2,
+	               @spacer-default * 3,
+	               @spacer-default * 4,
+				   @spacer-default * 5,
+				   @spacer-default * 6,
+				   @spacer-default * 7,
+	               auto;

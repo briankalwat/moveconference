@@ -1,0 +1,31 @@
+// Widths
+//-------------------//
+
+//-- width-common --//
+.width-common-utilities() {
+    .w-50   { width: 50%   !important; }
+    .w-65   { width: 65%   !important; }
+    .w-75   { width: 75%   !important; }
+    .w-85   { width: 85%   !important; }
+    .w-100   { width: 100%   !important; }
+  }
+  
+  //-- width-responsive --//
+  .width-responsive-utilities() {
+    .breakpoints-loop(@i: 1) when (@i <= length(@breakpoints)) {
+      @breakpoint:       extract(@breakpoints, @i);
+      @breakpoint-abbrv: extract(@breakpoint-abbrvs, @i);
+      
+      @media (min-width: @breakpoint) {
+        .w-@{breakpoint-abbrv}-50   { width: 50%   !important; }
+        .w-@{breakpoint-abbrv}-65  { width: 65%  !important; }
+        .w-@{breakpoint-abbrv}-75  { width: 75%  !important; }
+        .w-@{breakpoint-abbrv}-85  { width: 85%  !important; }
+        .w-@{breakpoint-abbrv}-100 { width: 100% !important; }
+      }
+  
+      .breakpoints-loop(@i + 1);
+    }
+  
+    .breakpoints-loop;
+  }

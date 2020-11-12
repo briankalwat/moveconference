@@ -1,0 +1,217 @@
+
+// Load Master Styles
+// -------------------------
+@import "../../../Styles/Bootstrap/variables.less";
+@import "../../../Styles/_rock-core.less";
+@import "../../../Styles/_store.less";
+@import "../../../Styles/_rock-variables.less";
+@import "_variables.less";
+@import "_variable-overrides.less";
+@import "partials/_buttons.less";
+@import "partials/_typography.less";
+@import "partials/_positioning.less";
+@import "partials/_colors.less";
+@import "partials/_grid.less";
+@import "_print.less";
+
+/*
+    Rock Theme Styles
+
+    1. HTML Overrides
+    2. Bootstrap Overrides
+    3. Theme Styling
+    4. Responsive Overrides
+
+*/
+
+// 1. HTML Overrides
+// -------------------------
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: @gray-dark;
+}
+
+// Temporary Fix for Safari 13 Select Rendering Bug
+select {
+  text-rendering: auto;
+  -webkit-font-smoothing: none;
+}
+// End Temporary Fix
+
+main {
+  display: block;
+}
+
+a { text-decoration: underline; }
+
+// 2. Bootstrap Overrides
+// -------------------------
+
+.navbar {
+  position: static; // default is relative which causes the dropdowns to go under the other navbars dispite having a higher z-index - JME 9/9/2013
+  // using fontawesome nav toggle button instead of the BS default
+  .navbar-toggle {
+    padding: 6px 10px;
+
+    i.fa-bars {
+      color: @navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
+}
+
+.nav {
+  li {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    border: 0px;
+  }
+
+  li.active a {
+    background-color: @brand-warning;
+  }
+}
+
+a:hover i.fs {
+  text-decoration: none;
+}
+
+mark { background-color: #fff46d; }
+
+.panel { font-size: 90%; overflow: hidden; }
+.panel:not(.panel-default) { border-width: 0; }
+.panel-body { color: @gray-darker; }
+.panel-body *:last-child { margin-bottom: 0; }
+.panel-body { padding: (@spacing-unit-base/3*2); }
+
+.panel-default {
+  .panel-heading {
+    background-color: @gray-dark;
+    color: @white;
+  }
+}
+.panel {
+  border: 0px;
+
+  .panel-heading a {
+    display: inline-block;
+    width: 100%;
+    font-family: @font-family-sans-serif;
+    font-weight: @font-weight-semibold;
+    text-decoration: none;
+    color: @white;
+  }
+}
+
+.list-group a {
+  text-decoration: none;
+}
+
+.collapse .list-group-item {
+  border-radius: 0;
+  border-bottom: 0px;
+}
+
+.list-group button {
+  border-top: 1px solid rgba(0,0,0,.2) !important;
+}
+
+.panel-secondary {
+  .panel-variant(transparent; @white; @brand-secondary; transparent);
+}
+
+.btn-secondary {
+  .button-variant(@white; @brand-secondary; @brand-secondary);
+}
+.btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
+.well-lg { padding: (@spacing-unit-base/3*2); }
+
+hr { border-width: 3px; }
+
+// 3. Theme Styling
+// -------------------------
+#navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.panel, .shadowed { box-shadow: 0 0 5px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.1); }
+.rounded { border-radius: @border-radius-large; }
+.letter-spacing-condensed { letter-spacing: -.5px; }
+.background-cover { background-size: cover; }
+.background-center { background-position: center; }
+.circular { border-radius: 10000px; }
+.overflow-hidden { overflow: hidden; }
+img { max-width: 100%; }
+.text-decoration-none, .text-decoration-none:hover { text-decoration: none; }
+.full-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bring-forward {
+  position: relative;
+  z-index: 1;
+}
+
+.accordion {
+  .panel-heading {
+    position: relative;
+
+    a:after {
+      content:'\f078';
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      position: absolute;
+      right: @spacing-unit-base;
+      top: 50%;
+      margin-top: -16px;
+      transform: rotate(180deg);
+      transition: all .15s ease-in-out;
+    }
+
+    a.collapsed:after {
+      transform: rotate(0deg);
+      margin-top: -13px;
+    }
+  }
+}
+
+// 4. Responsive Overrides
+// -------------------------
+
+// default styling should be for phones 767px or less
+
+// Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) {
+  #announcement-rotator {
+    margin: @spacing-lg-px 0;
+  }
+}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) {
+}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) {
+}
+
+@import "partials/_media-queries.less";
+@import "_css-overrides.less";

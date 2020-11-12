@@ -1,0 +1,44 @@
+button:focus { outline:0; }
+
+.btn:not(.btn-default),
+.btn:not(.btn-default):hover,
+.btn:not(.btn-default):focus,
+.btn:not(.btn-default):active,
+.btn-visited {
+    border-color: transparent;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-visited {
+    font-family: @font-family-sans-serif;
+    letter-spacing: -.3px;
+    text-decoration: none;
+}
+
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+    padding: (@padding-vertical - 1) @padding-horizontal @padding-vertical;
+    font-size: @font-size;
+    line-height: @line-height;
+    border-radius: @border-radius;
+  }
+
+.btn {
+    border-width: @btn-border-width;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @btn-font-size-base; @line-height-base; @btn-border-radius-base);
+}
+
+
+.btn-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    .button-size(@padding-large-vertical; @padding-large-horizontal; @btn-font-size-large; @line-height-large; @btn-border-radius-large);
+}
+.btn-sm {
+    // line-height: ensure proper height of button next to small input
+    .button-size(@padding-small-vertical; @padding-small-horizontal; @btn-font-size-small; @line-height-small; @btn-border-radius-small);
+}
+.btn-xs {
+    .button-size(@padding-xs-vertical; @padding-xs-horizontal; @btn-font-size-small; @line-height-small; @btn-border-radius-small);
+}

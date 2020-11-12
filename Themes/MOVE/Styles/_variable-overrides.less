@@ -1,0 +1,106 @@
+/* FontAwesome Start */
+@fa-theme-weight: 900;
+@fa-theme-weight-name: 'solid';
+@import "../../../Styles/FontAwesome/_rock-fa-mixins.less";
+/* FontAwesome End */
+
+// Colors
+@gray-base:             #000;
+@gray-darker:           #1D1C1A;
+@gray-dark:             #303030;
+@gray:                  #999999;
+@gray-light:            #cfcfcf;
+@gray-lighter:          #eeeeee;
+@white:                 #fff;
+
+@brand-primary:         #53b9c7;
+@brand-secondary:       #355973; //F1EDEB
+@brand-success:         #52ac52;
+@brand-info:            #69AEB8;
+@brand-warning:         #d6a125;
+@brand-danger:          #c44246;
+
+// Form States and Actions Colors
+@state-warning-text:             @white;
+@state-warning-bg:               @brand-warning;
+@state-warning-border:           transparent;
+//--
+@state-danger-text:              @white;
+@state-danger-bg:                @brand-danger;
+@state-danger-border:            transparent;
+//--
+@state-success-text:             @white;
+@state-success-bg:               @brand-success;
+@state-success-border:           transparent;
+//--
+@state-info-text:                @white;
+@state-info-bg:                  @brand-info;
+@state-info-border:              transparent;
+
+@body-bg:                           @white;
+
+// Radii
+@border-radius-base:        5px;
+
+// Spacing
+@spacing-unit-base:         30px;
+
+@padding-base-vertical:     8px;
+@padding-base-horizontal:   18px;
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+@padding-xs-vertical:       2px;
+@padding-xs-horizontal:     8px;
+
+// Panels
+@panel-body-padding:          (@spacing-unit-base);
+@panel-heading-padding:       (@spacing-unit-base/2) (@spacing-unit-base/3*2);
+
+// Navigation
+@nav-pills-active-link-hover-color: @white;
+@nav-pills-active-link-hover-bg:    @brand-secondary;
+
+// Typography
+@font-family-sans-serif:    'Titillium Web', sans-serif;
+@font-family-serif:         'Titillium Web', sans-serif;
+@font-family-handwritten:   'felt-tip-roman', sans-serif;
+@font-size-base:            20px;
+@font-weight-light:         300;
+@font-weight-semibold:      700;
+@font-weight-bold:          900;
+
+// Headings
+@headings-font-family:      inherit;
+@headings-font-weight:      900;
+@headings-line-height:      1.05;
+@headings-color:            inherit;
+@font-size-h1:              floor(@font-size-base * 2.4);
+@font-size-h2:              floor(@font-size-base * 2.1);
+@font-size-h3:              ceil(@font-size-base * 1.8);
+@font-size-h4:              ceil(@font-size-base * 1.5);
+@font-size-h5:              ceil(@font-size-base * 1.35);
+@font-size-h6:              ceil(@font-size-base * 1.2);
+
+// Grids
+@enable-grid-classes:       true;
+@grid-column-count:         12;
+@grid-gutter-width:         @spacing-unit-base;
+
+// Buttons
+@btn-font-size-base:        ceil(@font-size-base * .9);
+@btn-font-size-large:       ceil(@font-size-base);
+@btn-font-size-small:       ceil(@font-size-base * .8);
+
+@btn-font-weight:           700;
+@btn-border-width:          2px;
+@btn-border-radius-base:    @border-radius-base;
+
+@btn-default-color:         @gray-darker;
+@btn-default-bg:            transparent;
+@btn-default-border:        @gray-darker;
+
+// Breakpoints
+@screen-md:                  1200px;
+@screen-lg:                  1600px;
