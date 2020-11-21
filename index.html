@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MOVE Conference</title>
+        <title>MOVE Conference 2021</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="./Themes/MOVE/Styles/bootstrap.css">
+        <link rel="stylesheet" href="./Themes/MOVE/Styles/bootstrap-4-utilities.css">
         <link rel="stylesheet" href="./Themes/MOVE/Styles/theme.css">
+
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -16,99 +19,132 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
     </head>
     <body>
-      <section id="navigation" class="bg-white p-1 clearfix shadowed">
-        <img src="./Themes/MOVE/Assets/Images/move-logo-secondary-small.png" alt="MOVE Conference Logo" class="" style="max-width: 150px;">
-        <ul class="nav nav-pills m-0 pull-right hidden-xs">
-          <li><a href="#about" data-scroll>about</a></li>
-          <li><a href="#schedule" data-scroll>schedule</a></li>
-          <li><a href="#speakers" data-scroll>speakers</a></li>
-          <li><a href="#pricing" data-scroll>pricing</a></li>
-          <li><a href="#faq" data-scroll>faq</a></li>
-          <li class="active"><a href="https://move-conference.brushfire.com/events/483395" target="_blank">register</a></li>
-        </ul>
-        <a href="#" class="pull-right hidden-sm hidden-md hidden-lg"><i class="fa fa-lg fa-bars"></i></a>
+
+
+      <section id="navigation" class="bg-white shadowed">
+        <div class="position-relative clearfix">
+          
+          <a href="#" class="logo" data-scroll><img src="./Themes/MOVE/Assets/Images/move-logo-secondary-small.png" alt="MOVE Conference Logo"></a>
+
+          <ul class="list-nav pull-right mb-0 hidden-sm hidden-md hidden-lg">
+            <li><a href="#" data-toggle-nav><i class="fas fa-bars fa-lg"></i></a></li>
+          </ul>
+
+          <ul class="list-nav list-nav-menu pull-right mb-0">
+            <li><a href="#about" data-scroll data-toggle-nav>about</a></li>
+            <li><a href="#schedule" data-scroll data-toggle-nav>schedule</a></li>
+            <li><a href="#speakers" data-scroll data-toggle-nav>speakers</a></li>
+            <li><a href="#pricing" data-scroll data-toggle-nav>pricing</a></li>
+            <li><a href="#faq" data-scroll data-toggle-nav>faq</a></li>
+            <li class="active"><a href="https://move-conference.brushfire.com/events/483395" target="_blank">register</a></li>
+          </ul>
+
+        </div>
       </section>
 
-      <section class="position-relative floating bg-gray-darker px-1 pt-2 pb-1 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-100">
-        <div class="full-screen background-cover background-center" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2460&q=80'); opacity: .4; filter: grayscale(.0);"></div>
-        <div class="floating-item bring-forward w-md-50 mx-auto mb-7 mb-sm-0 text-white" data-aos="fade-up">
-          <img src="/Themes/MOVE/Assets/Images/move-logo-white-large.png" alt="MOVE Conference Logo" class="mb-1">
-          <p class="lead mb-1">A one-day virtual missions conference.</p>
-          <p class="h4 text-warning text-uppercase">February 25, 2021</p>
+
+
+      <section class="position-relative floating bg-secondary text-white px-1 pt-2 pb-1 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-100">
+
+        <video class="full-screen hidden-xs" muted autoplay loop style="opacity: .6;">
+          <source src="/Themes/MOVE/Assets/Videos/movebg.mp4" type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <div class=" full-screen background-cover background-center hidden-sm hidden-md hidden-lg" style="background-image:url('/Themes/MOVE/Assets/Images/move-group.jpg'); opacity:.4;"></div>
+
+        <div class="floating-item bring-forward mx-auto mt-0 mt-md-7" data-aos="fade-up">
+          <h1 class="">Equip the Church.<br>Engage the Lost.<br>Embrace the Nations.</h1>
+          <p class="lead mb-1">MOVE Conference is a one-day virtual missions conference.</p>
+          <p class="h2 text-warning text-uppercase">February 25, 2021</p>
           <p><a href="#about" data-scroll class="btn btn-primary">Learn More</a></p>
         </div>
       </section>
 
-      <section id="about" class="position-relative bg-white px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-6 pt-lg-6 pb-lg-5">
-        <div class="w-md-65 mx-auto text-center" data-aos="fade-up" data-aos-duration="700">
-          <h2 class="h2 text-secondary">For the first time in the history of MOVE Conference, we'll gather together online.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores aut pariatur. Culpa, explicabo pariatur tenetur et rerum nemo dignissimos officiis laborum ut cupiditate laudantium deserunt unde! Rerum minus facilis ducimus amet eligendi dolorum suscipit, debitis deserunt, ipsum laborum accusamus.</p>
+
+      <section id="about" class="position-relative bg-white px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-4 px-lg-6 pt-lg-7 pb-lg-6">
+        <div class="w-md-65 mx-auto text-center" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100">
+          <h2 class="text-secondary">For the first time in the history of MOVE, we'll gather together online.</h2>
+          <p><b>MOVE Conference is designed for anyone who is passionate about sharing the gospel locally, nationally and internationally.</b> Pastors, church staff, college students and any leader who desires to learn, grow and develop in the area of missions will benefit from MOVE.</p>
           <p><a href="#" class="btn btn-primary">Register Now</a></p>
         </div>
       </section>
 
-      <section class="position-relative floating bg-gray-darker px-1 pt-2 pb-1 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-50 vh-md-75">
-        <div class="full-screen background-cover background-center" style="background-image:url('./Themes/MOVE/Assets/Images/move-group.jpg'); opacity: 1; filter: grayscale(.0);"></div>
+
+      <section class="position-relative bg-secondary text-white px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-4 px-lg-6 pt-lg-7 pb-lg-6">
+        <div class="w-md-65 mx-auto text-center" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100">
+          <h2>Don't watch MOVE Conference alone!</h2>
+          <p class="lead">We believe that the best way to experience MOVE is within a community that can help encourage each other, facilitate discussion, and challenge new ideas.</p>
+          <p><b>MOVE will be broadcasting live.</b> Gather a group from your church, mission team, or college ministry and consider hosting a watch party. Group pricing is available for teams of 5 or more. Host kits will be mailed closer to the conference.</p>
+          <p><a href="#" class="btn btn-primary">Register Now</a></p>
+        </div>
+      </section>
+
+
+      <section class="position-relative floating bg-gray-darker px-1 pt-2 pb-1 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-50 vh-md-100">
+        <div class="full-screen background-cover background-center" style="background-image:url('./Themes/MOVE/Assets/Images/move-students.jpg'); opacity: 1; filter: grayscale(.0);"></div>
       </section>
       
-      <section id="schedule" class="bg-secondary px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-6 pt-lg-6 pb-lg-5">
-          <div class="grid floating w-lg-85 mx-auto">
+
+      <section id="schedule" class="bg-secondary px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-5 px-lg-6 pt-lg-6 pb-lg-5">
+          <div class="grid w-lg-85 mx-auto">
             <div class="gcol-12 gcol-md-6 text-white" data-aos="fade-up" data-aos-duration="700">
               <h2 class="h1">Conference Schedule</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus dolore voluptates enim recusandae voluptate deserunt sed provident debitis. Labore accusantium doloremque quos voluptatibus voluptas.</p>
+              <p><b>We are encouraging everyone to watch live with us on February 25, as we’ll be gathering and speaking directly to what we’re walking through in that moment &mdash; we don’t want you to miss it!</b> That being said, we know conflicts will come up, so we’ll make MOVE Conference content available on demand after March 5, 2021.</p>
+              <p><a href="#" class="btn btn-primary">Register Now</a></p>
             </div>
-            <div class="gcol-12 gcol-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-offset="300">
+            <div class="gcol-12 gcol-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
               <ul class="list-group mb-0">
                 <li class="list-group-item text-right">
                   <span class="pull-left">Main Session 1</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">9 am</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">9 am</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">Breakout Session 1</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">10:30 am</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">10:30 am</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">Lunch</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">12 pm</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">12 pm</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">Main Session 2</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">12:30 pm</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">12:30 pm</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">Breakout Session 2</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">2 pm</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">2 pm</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">Main Session 3</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">3:30 pm</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">3:30 pm</span>
                 </li>
                 <li class="list-group-item text-right">
                   <span class="pull-left">End of Conference</span>
-                  <span class="text-primary text-bold letter-spacing-condensed">5 pm</span>
+                  <span class="text-primary text-semibold letter-spacing-condensed">5 pm</span>
                 </li>
               </ul>
             </div>
           </div>
       </section>
 
-      <section class="position-relative floating bg-gray-darker px-1 pt-2 pb-1 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-50 vh-md-75">
+
+      <section class="position-relative floating bg-gray-darker px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-7 pt-lg-7 pb-lg-6 text-center vh-50 vh-md-75">
         <div class="full-screen background-cover background-center" style="background-image:url('./Themes/MOVE/Assets/Images/move-clay.jpg'); opacity: 1; filter: grayscale(.0);"></div>
       </section>
 
-      <section id="speakers" class="bg-white px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-6 pt-lg-6 pb-lg-5">
+
+      <section id="speakers" class="bg-white px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-5 px-lg-6 pt-lg-6 pb-lg-5">
         <div class="grid w-lg-85 mx-auto">
 
-          <div class="gcol-12">
+          <div class="gcol-12 text-center mb-2">
             <h2 class="h1 text-uppercase">Speaker Lineup</h2>
           </div>
 
-          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3" data-aos="fade-up" data-aos-duration="700">
-            <div class="bg-primary ratio ratio-landscape ratio-sm-square mb-1">
+          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3 text-center mb-3" data-aos="fade-up" data-aos-duration="700">
+            <div class="bg-primary ratio ratio-square mb-1 circular overflow-hidden mx-auto" style="max-width:200px;">
               <div class="full-screen background-cover background-center" style="background-image:url('https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg'); filter:grayscale(1); opacity: .5;"></div>
             </div>
 
@@ -124,8 +160,8 @@
             
           </div>
 
-          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
-            <div class="bg-primary ratio ratio-landscape ratio-sm-square mb-1">
+          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3 text-center mb-3" data-aos="fade-up" data-aos-duration="700">
+            <div class="bg-primary ratio ratio-square mb-1 circular overflow-hidden mx-auto" style="max-width:200px;">
               <div class="full-screen background-cover background-center" style="background-image:url('https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg'); filter:grayscale(1); opacity: .5;"></div>
             </div>
             <h3 class="text-warning mb-1">Ricky Wheeler</h3>
@@ -139,8 +175,8 @@
             <p class="mb-1"><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>
           </div>
 
-          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-offset="400">
-            <div class="bg-primary ratio ratio-landscape ratio-sm-square mb-1">
+          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3 text-center mb-3" data-aos="fade-up" data-aos-duration="700">
+            <div class="bg-primary ratio ratio-square mb-1 circular overflow-hidden mx-auto" style="max-width:200px;">
               <div class="full-screen background-cover background-center" style="background-image:url('https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg'); filter:grayscale(1); opacity: .5;"></div>
             </div>
             <h3 class="text-warning mb-1">Ricky Wheeler</h3>
@@ -154,8 +190,8 @@
             <p class="mb-1"><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>
           </div>
 
-          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-offset="500">
-            <div class="bg-primary ratio ratio-landscape ratio-sm-square mb-1">
+          <div class="gcol-12 gcol-sm-6 gcol-md-3 gcol-lg-3 text-center mb-3" data-aos="fade-up" data-aos-duration="700">
+            <div class="bg-primary ratio ratio-square mb-1 circular overflow-hidden mx-auto" style="max-width:200px;">
               <div class="full-screen background-cover background-center" style="background-image:url('https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg'); filter:grayscale(1); opacity: .5;"></div>
             </div>
             <h3 class="text-warning mb-1">Ricky Wheeler</h3>
@@ -172,40 +208,58 @@
         </div>
       </section>
 
-      <section id="pricing" class="bg-secondary text-white px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-6 pt-lg-6 pb-lg-5">
-        <div class="w-lg-85 mx-auto">
+
+      <section id="pricing" class="bg-secondary text-white px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-5 px-lg-6 pt-lg-6 pb-lg-5">
+        <div class="w-md-65 mx-auto text-center mb-3">
           <h2 class="h1 text-uppercase">Pricing</h2>
+          <p class="lead">Registration fees include access to the virtual conference per registered attendee and a MOVE bundle that will be mailed to you.</p>
+          <p class="text-semibold">All content will also be available on-demand after March 5, 2021.</p>
+        </div>
+        <div class="w-lg-85 mx-auto mb-1">
           <div class="grid">
             <div class="gcol-12 gcol-md-4" data-aos="fade-up" data-aos-duration="700">
               <div class="panel text-center">
                 <div class="panel-body">
-                  <h3 class="jumbo text-primary mb-1">$25</h3>
-                  <p class="text-italic text-gray mb-1">Now through Jan 14, 2021</p>
-                  <p><a href="#" class="btn btn-warning btn-sm">Register Now</a></p>
+                  <p class="h3 text-secondary mb-1">Early Bird</p>
+                  <p class="text-primary text-semibold letter-spacing-condensed mb-1">Now through Jan 14, 2021</p>
+                  <h3 class="jumbo text-warning mb-0">$25</h3>
+                  <p class="text-italic text-secondary mb-1">per person</p>
+                  <p><a href="#" class="btn btn-primary">Register Now</a></p>
                 </div>
               </div>
             </div>
             <div class="gcol-12 gcol-md-4" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
               <div class="panel text-center">
                 <div class="panel-body">
-                  <h3 class="jumbo text-gray mb-1">$35</h3>
-                  <p class="text-italic text-gray mb-1">Jan 15 - Feb 24, 2021</p>
+                  <p class="h3 text-secondary mb-1">Regular</p>
+                  <p class="text-primary text-semibold letter-spacing-condensed mb-1">Jan 15 - Feb 24, 2021</p>
+                  <h3 class="jumbo text-gray-light mb-0">$35</h3>
+                  <p class="text-italic text-gray mb-1">per person</p>
                 </div>
               </div>
             </div>
-            <div class="gcol-12 gcol-md-4" data-aos="fade-up" data-aos-duration="700" data-aos-offset="300">
+            <div class="gcol-12 gcol-md-4" data-aos="fade-up" data-aos-duration="700" data-aos-offset="250">
               <div class="panel text-center">
                 <div class="panel-body">
-                  <h3 class="jumbo text-gray mb-1">$45</h3>
-                  <p class="text-italic text-gray mb-1">Feb 25, 2021</p>
+                  <p class="h3 text-secondary mb-1">Day of Conference</p>
+                  <p class="text-primary text-semibold letter-spacing-condensed mb-1">Feb 25, 2021</p>
+                  <h3 class="jumbo text-gray-light mb-0">$45</h3>
+                  <p class="text-italic text-gray mb-1">per person</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="w-md-65 mx-auto text-center mb-3">
+          <h2 class="h3">Group Registration</h2>
+          <p>A special group registration rate of <b>$15/person</b> is available at all times for groups of five or more people.</p>
+          <p><a href="#" class="btn btn-primary">Register Your Group</a></p>
+        </div>
       </section>
 
-      <section id="faq" class="bg-gray-lighter px-1 pt-3 pb-2 px-md-4 pt-md-4 pb-md-3 px-lg-6 pt-lg-6 pb-lg-5">
+
+      <section id="faq" class="bg-gray-lighter px-1 pt-3 pb-2 px-md-4 pt-md-6 pb-md-5 px-lg-6 pt-lg-6 pb-lg-5">
         <div class="w-lg-85 mx-auto">
           <h2 class="h1 text-uppercase">Frequently Asked Questions</h2>
           <div class="list-group">
@@ -225,30 +279,25 @@
         </div>
       </section>
 
-      <footer class="bg-gray-darker text-white p-2">
-        <div class="grid mb-0">
-          <div class="gcol-12 gcol-sm-6 xs-text-center">
-            <p class="mb-0 letter-spacing-condensed">
-              <i class="fal fa-xs fa-copyright" style="position: relative; top: -1px;"></i>&nbsp; <span class="text-semibold">2020 MOVE Conference</span><br>
-              <i class="fal fa-xs fa-envelope" style="position: relative; top: -1px;"></i>&nbsp; <a href="#" class="text-decoration-none text-warning">move@jfbc.org</a><br>
-              <i class="fal fa-xs fa-phone" style="position: relative; top: -1px;"></i>&nbsp; <a href="#" class="text-decoration-none text-warning">(678) 718-1392</a></p>
-          </div>
-          <div class="gcol-12 gcol-sm-6 text-right">
-            <p class="mb-0">
-              <a href="https://www.rockrms.com" class="text-white text-hover-white" target="_blank">
-              <span class="position-relative fa-layers fa-lg fa-fw" style="top:5px;">
-                  <i class="fas fa-circle" style="color:white" aria-hidden="true"></i>
-                  <i class="fa-inverse fab fa-rockrms" style="color: #ee7725; transform: scale(1.1);" data-fa-transform="shrink-6" aria-hidden="true"></i>
-              </span></a>
-            </p>
-          </div>
-        </div>
+
+      <footer class="bg-gray-darker text-white text-center text-md-left p-2">
+        <p class="mb-0 letter-spacing-condensed">
+          <i class="fal fa-xs fa-copyright" style="position: relative; top: -1px;"></i>&nbsp; <span class="text-semibold">2020 MOVE Conference</span><br>
+          <i class="fal fa-xs fa-envelope" style="position: relative; top: -1px;"></i>&nbsp; <a href="#" class="text-decoration-none text-warning">move@jfbc.org</a><br>
+          <i class="fal fa-xs fa-phone" style="position: relative; top: -1px;"></i>&nbsp; <a href="#" class="text-decoration-none text-warning">(678) 718-1392</a></p>
       </footer>
 
+
       <script>
+        // Toggle for mobile navigation
+        $('[data-toggle-nav]').on('click', function(e){
+          e.preventDefault();
+          $('.list-nav-menu').toggleClass('nav-open');
+        });
+
         // Init Animate on Scroll
         AOS.init({
-          once: true
+          once: false
         });
 
         // Init Smooth Scrolling
@@ -261,7 +310,7 @@
 
           // Speed & Duration
           speed: 500, // Integer. Amount of time in milliseconds it should take to scroll 1000px
-          speedAsDuration: false, // If true, use speed as the total duration of the scroll animation
+          speedAsDuration: true, // If true, use speed as the total duration of the scroll animation
           durationMax: null, // Integer. The maximum amount of time the scroll animation should take
           durationMin: null, // Integer. The minimum amount of time the scroll animation should take
           clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
@@ -272,27 +321,8 @@
 
         });
 
-        $('.collapse').collapse()
-
-        function calcFixedNavOffset(){
-          let screenWidth = $('body').outerWidth();
-          let navHeight = $('#navigation').outerHeight();
-
-          if(screenWidth < 768) {
-            // mobile
-            document.body.style.paddingBottom = navHeight + 'px';
-            document.body.style.paddingTop = '0px';
-          } else {
-            // desktop
-            document.body.style.paddingTop = navHeight + 'px';
-            document.body.style.paddingBottom = '0px';
-          }
-          console.log('resize');
-        }
-
-        calcFixedNavOffset();
-
-        window.addEventListener('resize', calcFixedNavOffset);
+        // Collapse for bootstrap accordions
+        $('.collapse').collapse('hide');
 
       </script>
     </body>

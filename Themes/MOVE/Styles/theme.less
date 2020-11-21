@@ -11,7 +11,6 @@
 @import "partials/_typography.less";
 @import "partials/_positioning.less";
 @import "partials/_colors.less";
-@import "partials/_grid.less";
 @import "_print.less";
 
 /*
@@ -100,7 +99,6 @@ mark { background-color: #fff46d; }
 }
 .panel {
   border: 0px;
-
   .panel-heading a {
     display: inline-block;
     width: 100%;
@@ -134,7 +132,9 @@ mark { background-color: #fff46d; }
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 }
-
+.btn-disabled {
+  .button-variant(@white; @gray; @gray);
+}
 .well-lg { padding: (@spacing-unit-base/3*2); }
 
 hr { border-width: 3px; }
@@ -143,11 +143,73 @@ hr { border-width: 3px; }
 // -------------------------
 #navigation {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
 }
+
+.logo {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+
+  img {
+    max-height: 40px;
+  }
+}
+
+.list-nav { 
+  display: inline-block;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+
+    &.active a {
+      background-color: @brand-warning;
+      color: @white;
+
+      &:hover {
+        background-color: darken(@brand-warning, 5);
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: @spacing-unit-base;
+
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
+.list-nav-menu {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: all .1s ease-in-out;
+
+  &.nav-open {
+    height: 100%;
+  }
+  
+  li {
+    width: 100%;
+
+    a {
+      width: 100%;
+      padding: (@spacing-unit-base/3*2);
+    }
+  }
+}
+
 .panel, .shadowed { box-shadow: 0 0 5px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.1); }
 .rounded { border-radius: @border-radius-large; }
 .letter-spacing-condensed { letter-spacing: -.5px; }
@@ -163,6 +225,15 @@ img { max-width: 100%; }
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+}
+video.full-screen {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .bring-forward {

@@ -3129,6 +3129,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/Themes/MOVE/Assets/Images/move-students.jpg": {
+		"ft": 16384,
+		"iS": 850713,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Themes/MOVE/Assets/Images/move-students.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/Themes/MOVE/Assets/Lava/AdDetails.lava": {
 		"cB": 0,
 		"ft": 8192,
@@ -3425,6 +3438,14 @@
 		"oAP": "/Themes/MOVE/Assets/Lava/ScheduledTransactionSummary.lava",
 		"oF": 0
 		},
+	"/Themes/MOVE/Assets/Videos/movebg.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Themes/MOVE/Assets/Videos/movebg.mp4",
+		"oF": 0
+		},
 	"/Themes/MOVE/Layouts/Blank.aspx": {
 		"cB": 0,
 		"ft": 8192,
@@ -3546,22 +3567,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/Themes/MOVE/Styles/_bootstrap-4-utilities.less": {
-		"aP": 0,
-		"bl": 0,
-		"eJ": 0,
-		"ft": 1,
-		"iI": 0,
-		"ma": 1,
-		"mS": 0,
-		"oA": 1,
-		"oAP": "/Themes/MOVE/Styles/_bootstrap-4-utilities.css",
-		"oF": 0,
-		"oS": 0,
-		"rwU": 0,
-		"sI": 0,
-		"sU": 0
-		},
 	"/Themes/MOVE/Styles/_css-overrides.less": {
 		"aP": 0,
 		"bl": 0,
@@ -3636,6 +3641,32 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/Themes/MOVE/Styles/bootstrap-4-utilities.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Themes/MOVE/Styles/bootstrap-4-utilities-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/Themes/MOVE/Styles/bootstrap-4-utilities.less": {
+		"aP": 0,
+		"bl": 0,
+		"eJ": 0,
+		"ft": 1,
+		"iI": 0,
+		"ma": 0,
+		"mS": 0,
+		"oA": 0,
+		"oAP": "/Themes/MOVE/Styles/bootstrap-4-utilities.css",
+		"oF": 1,
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 0
+		},
 	"/Themes/MOVE/Styles/bootstrap.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3678,23 +3709,21 @@
 		"sI": 0,
 		"sU": 0
 		},
-	"/Themes/MOVE/Styles/bs4-utilities/height.css": {
-		"aP": 1,
+	"/Themes/MOVE/Styles/bs4-utilities/grid.less": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/Themes/MOVE/Styles/bs4-utilities/height-min.css",
+		"eJ": 0,
+		"ft": 1,
+		"iI": 0,
+		"ma": 1,
+		"mS": 0,
+		"oA": 1,
+		"oAP": "/Themes/MOVE/Styles/bs4-utilities/grid.css",
 		"oF": 0,
-		"oS": 3
-		},
-	"/Themes/MOVE/Styles/bs4-utilities/height.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Themes/MOVE/Styles/bs4-utilities/height.css.map",
-		"oF": 0
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 0
 		},
 	"/Themes/MOVE/Styles/bs4-utilities/height.less": {
 		"aP": 0,
@@ -3711,24 +3740,6 @@
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
-		},
-	"/Themes/MOVE/Styles/bs4-utilities/ratios.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/Themes/MOVE/Styles/bs4-utilities/ratios-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/Themes/MOVE/Styles/bs4-utilities/ratios.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Themes/MOVE/Styles/bs4-utilities/ratios.css.map",
-		"oF": 0
 		},
 	"/Themes/MOVE/Styles/bs4-utilities/ratios.less": {
 		"aP": 0,
@@ -3836,22 +3847,6 @@
 		"mS": 0,
 		"oA": 1,
 		"oAP": "/Themes/MOVE/Styles/partials/_colors.css",
-		"oF": 0,
-		"oS": 0,
-		"rwU": 0,
-		"sI": 0,
-		"sU": 0
-		},
-	"/Themes/MOVE/Styles/partials/_grid.less": {
-		"aP": 0,
-		"bl": 0,
-		"eJ": 0,
-		"ft": 1,
-		"iI": 0,
-		"ma": 1,
-		"mS": 0,
-		"oA": 1,
-		"oAP": "/Themes/MOVE/Styles/partials/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"rwU": 0,
